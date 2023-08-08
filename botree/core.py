@@ -4,6 +4,7 @@ from typing import Optional
 from boto3.session import Session as boto_session
 
 from botree.cost_explorer import CostExplorer
+from botree.ec2 import EC2
 from botree.logs import Logs
 from botree.s3 import S3
 from botree.secrets_manager import SecretsManager
@@ -58,3 +59,8 @@ class Session:
     def logs(self) -> Logs:
         """Get a Logs instance."""
         return Logs(self.session)
+
+    @property
+    def ec2(self) -> EC2:
+        """Get an EC2 instance."""
+        return EC2(self.session)
