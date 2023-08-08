@@ -11,6 +11,7 @@ Currently, there are just some Boto3 wrapped classes.
 -   ✔️ CloudWatch
 -   ✔️ Cost Explorer
 -   ✔️ Secrets Manager
+-   ✔️ EC2
 
 ## 💻 Basic usage
 
